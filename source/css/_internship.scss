@@ -1,0 +1,54 @@
+.internship {
+
+    &__wrapper {
+    }
+
+    &__items {
+    }
+
+    &__sticky-text {
+    }
+
+    &__rows {
+    }
+
+    &__row {
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    &__item {
+        height: 233px;
+
+        &.red {
+            background: rgba(214, 19, 54, 0.8);
+        }
+    }
+
+    &__item-value {
+        font-family: "Roboto Condensed", Arial, Helvetica, sans-serif;
+        font-size: 20px;
+        line-height: 20px;
+        font-weight: 900;
+        text-transform: uppercase;
+        color: $dark;
+        letter-spacing: normal;
+    }
+
+    &__item-text {
+        font-family: "Roboto", Arial, Helvetica, sans-serif;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+        color: $dark;
+        text-transform: none;
+        letter-spacing: normal;
+        max-width: 262px;
+    }
+
+    &__item.red &__item-value,
+    &__item.red &__item-text {
+        color: white;
+    }
+}

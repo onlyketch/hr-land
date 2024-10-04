@@ -1,0 +1,115 @@
+.hero {
+    position: relative;
+    background-color: $red;
+    height: 100vh;
+    overflow: hidden;
+
+    &__wrapper {
+        position: relative;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    &__info {
+        position: relative;
+        z-index: 20;
+    }
+
+    &__title {
+        font-family: "Roboto Condensed", Arial, Helvetica, sans-serif;
+        font-size: 64px;
+        line-height: 64px;
+        font-weight: 900;
+        color: white;
+        text-transform: uppercase;
+    }
+
+    &__title-btn {
+        display: inline-block;
+        width: 55px;
+        height: 55px;
+        background-color: white;
+        border-radius: 50%;
+        transform: translateY(5px);
+        background-image: url('../images/arrow-red-down.svg');
+        background-repeat: no-repeat;
+        background-size: 15px 13px;
+        background-position: center;
+        animation: slideY .8s linear infinite;
+    }
+
+    &__subtitle {
+        font-family: "Roboto Condensed", Arial, Helvetica, sans-serif;
+        font-size: 16px;
+        line-height: 20px;
+        font-weight: 400;
+        color: white;
+        margin-top: 27px;
+    }
+
+    &__btn {
+        margin-top: 68px;
+    }
+
+    &__note {
+        position: absolute;
+        bottom: 80px;
+        right: 0;
+        background: rgba(255, 255, 255, 0.2);
+        backdrop-filter: blur(30px);
+        border-radius: 16px;
+        font-family: "Roboto", Arial, Helvetica, sans-serif;
+        font-size: 16px;
+        line-height: 20px;
+        color: white;
+        font-weight: 400;
+        padding: 25px 34px 26px 24px;
+        max-width: 265px;
+        z-index: 20;
+    }
+
+    &__girl {
+        position: absolute;
+        top: 0;
+        bottom: -5px;
+        right: 85px;
+        width: 54.375%;
+        height: 120%;
+        max-width: 783px;
+        transform: translateY(-70px);
+
+        img {
+            width: auto;
+            height: 100%;
+
+            @media (max-width: 1363px) {
+                width: 100%;
+                height: auto;
+                margin-top: auto;
+            }
+        }
+
+        @media (max-width: 1363px) {
+            height: 100%;
+            top: auto;
+            transform: translateY(0);
+            display: flex;
+            flex-direction: column;
+            right: 4px;
+        }
+    }
+}
+
+@keyframes slideY {
+    0% {
+        transform: translateY(0);
+    }
+    25% {
+        transform: translateY(5px); 
+    }
+    100% {
+        transform: translateY(0); 
+    }
+}

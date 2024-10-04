@@ -1,0 +1,69 @@
+.real-estate {
+    margin-top: 200px;
+
+    &__title {
+        font-family: "Roboto Condensed", Arial, Helvetica, sans-serif;
+        font-size: 24px;
+        font-weight: 900;
+        line-height: 40px;
+        text-transform: uppercase;
+        color: $dark;
+        margin-left: 263px;
+    }
+
+    &__lines {
+        margin-top: 65px;
+        overflow: hidden;
+    }
+
+    &__line {
+        display: flex;
+    
+        &-item, &-bull {
+            white-space: nowrap;
+            flex-shrink: 0;
+            user-select: none;
+            font-family: "Roboto Condensed", Arial, Helvetica, sans-serif;
+            font-size: 96px;
+            font-weight: 900;
+            line-height: 96px; 
+            letter-spacing: -2.88px;
+            text-transform: uppercase;
+            color: #B6B6B6;
+            transition: color .3s ease-out;
+        }
+
+        &-item:hover {
+            color: $red;
+        }
+
+        &-one {
+            display: flex;
+            animation: loop 40s linear infinite;
+        }
+
+        &-two {
+            display: flex;
+            animation: loop 40s linear infinite;
+            animation-direction: reverse;
+        }
+
+        &.first:hover &-one {
+            animation-play-state: paused;
+        }
+
+        &.second:hover &-two {
+            animation-play-state: paused;
+        }
+    }
+
+}
+
+@keyframes loop {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+}

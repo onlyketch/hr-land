@@ -1,0 +1,51 @@
+.clients {
+    padding-top: 200px;
+
+    &__wrapper {
+        display: flex;
+        align-items: flex-start;
+    }
+
+    &__text {
+        font-family: "Roboto Condensed", Arial, Helvetica, sans-serif;
+        font-size: 40px;
+        line-height: 40px;
+        font-weight: 900;
+        text-transform: uppercase;
+        color: $dark;
+        max-width: 500px;
+        margin-left: 207px;
+    }
+
+    &__logos {
+        margin-top: 84px;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+    }
+
+    &__items {
+        display: flex;
+        align-items: center;
+        animation: loop 40s linear infinite;
+    }
+
+    &__item {
+        width: 180px;
+        height: 180px;
+        border-radius: 50%;
+        background-color: $light-gray;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+        pointer-events: none;
+        user-select: none;
+        margin-right: 1px;
+
+        img {
+            transform: scale(0.5);
+        }
+    }
+}
+

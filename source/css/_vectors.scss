@@ -1,0 +1,192 @@
+.vectors {
+    padding-top: 200px;
+
+    &__wrapper {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        margin-bottom: 120px;
+
+        &:last-child {
+            margin-bottom: 0; 
+        }
+    }
+
+    &__left {
+        .section-sign {
+            margin-bottom: 26px;
+        }
+    }
+
+    &__name {
+        text-transform: uppercase;
+    }
+
+    &__description {
+        font-family: "Roboto", Arial, Helvetica, sans-serif;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 18px;
+        color: $dark;
+        max-width: 405px;
+        margin-top: 28px;
+    }
+
+    &__right {
+        width: 100%;
+        max-width: 766px;
+    }
+
+    &__items {
+    }
+
+    &__item {
+        position: relative;
+        background-color: $light-gray;
+        border-radius: 24px;
+        overflow: hidden;
+        max-height: 76px;
+        margin-bottom: 12px;
+        transition: max-height .3s linear;
+
+        &:last-child {
+            margin-bottom: 0; 
+        }
+
+        &-title {
+            max-width: 570px;
+        }
+
+        &-btn {
+            border: none;
+            outline: none;
+            appearance: none;
+            width: 40px;
+            height: 40px;
+            background-color: #F8F8F8;
+            border-radius: 12px;
+            background-image: url('../images/arrow-accardion.svg');
+            background-repeat: no-repeat;
+            background-size: 10px 6px;
+            background-position: center;
+            cursor: pointer;
+            transition: all .3s linear;
+        }
+
+        &.open {
+            max-height: 834px; 
+        }
+
+        &.open &-btn {
+            transform: scaleY(-1);
+        }
+
+        &-handler {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 76px;
+            border-radius: 24px;
+            cursor: pointer;
+        }
+    }
+
+    &__item-head {
+
+        padding: 18px 28px 12px 28px;
+
+        &-wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        &-desc {
+            font-family: "Roboto", Arial, Helvetica, sans-serif;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 20px;
+            color: $dark;
+            max-width: 549px;
+            margin-top: 16px;
+        }
+
+        &-cases-title {
+            font-family: "Roboto Condensed", Arial, Helvetica, sans-serif;
+            font-size: 14px;
+            line-height: 20px;
+            text-transform: uppercase;
+            font-weight: 900;
+            color: $dark;
+            margin-top: 32px;
+        }
+    }
+
+
+    &__item-cases {
+    }
+
+    &__item-case {
+        position: relative;
+        background-color: green;
+        color: white;
+        padding: 20px 17px 24px 28px;
+
+        &-head {
+            position: relative;
+            z-index: 10;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        &-info {
+            font-family: "Roboto Condensed", Arial, Helvetica, sans-serif;
+            font-size: 20px;
+            line-height: 20px;
+            text-transform: uppercase;
+            font-weight: 900;
+            display: flex;
+            align-items: center;
+        }
+
+        &-name {}
+
+        &-area {
+            margin-left: 20px;
+        }
+
+        &-year {
+            font-family: "Roboto Mono", Arial, Helvetica, sans-serif;
+            font-size: 10px;
+            font-weight: 500;
+            line-height: 17px;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+        }
+
+        &-description {
+            position: relative;
+            z-index: 10;
+            font-family: "Roboto", Arial, Helvetica, sans-serif;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 18px;
+            max-width: 496px;
+            margin-top: 59px;
+        }
+
+        &-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: 5;
+        }
+    }
+
+}
+
