@@ -4,6 +4,10 @@
     &__wrapper {
         display: flex;
         align-items: flex-start;
+
+        @media (max-width: 1023px) {
+            flex-direction: column;
+        }
     }
 
     &__text {
@@ -14,7 +18,15 @@
         text-transform: uppercase;
         color: $dark;
         max-width: 500px;
-        margin-left: 207px;
+        margin-left: 15.923%;
+
+        @media (max-width: 1023px) {
+            font-size: 24px;
+            line-height: 24px;
+            max-width: 358px;
+            margin-left: 0;
+            margin-top: 24px; 
+        }
     }
 
     &__logos {
@@ -22,6 +34,10 @@
         overflow: hidden;
         display: flex;
         align-items: center;
+
+        @media (max-width: 1023px) {
+            margin-top: 24px;
+        }
     }
 
     &__items {
@@ -45,7 +61,20 @@
 
         img {
             transform: scale(0.5);
+
+            @media (max-width: 1023px) {
+                transform: scale(0.35); 
+            }
         }
+
+        @media (max-width: 1023px) {
+            width: 128px;
+            height: 128px; 
+        }
+    }
+
+    @media (max-width: 1023px) {
+        padding-top: 95px;
     }
 }
 

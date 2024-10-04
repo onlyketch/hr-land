@@ -28,7 +28,8 @@ document.addEventListener('DOMContentLoaded', function() {
         arrows: false,
         draggable: false,
         slidesToShow: 1,
-        slidesToScroll: 1
+        slidesToScroll: 1,
+        swipe: false
     });
 
     reviewsButtonNext.addEventListener('click', function() {
@@ -54,6 +55,7 @@ document.addEventListener('DOMContentLoaded', function() {
     $('.why__slider').slick({
         arrows: false,
         draggable: false,
+        swipe: false,
         infinite: true,
         speed: 500,
         fade: true,

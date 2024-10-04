@@ -10,16 +10,33 @@
         &:last-child {
             margin-bottom: 0; 
         }
+
+        @media (max-width: 1023px) {
+            flex-direction: column;
+            margin-bottom: 64px;
+        }
     }
 
     &__left {
+        margin-right: 40px;
+        flex-shrink: 0;
         .section-sign {
             margin-bottom: 26px;
+
+            @media (max-width: 1023px) {
+                margin-bottom: 24px;
+            }
         }
     }
 
     &__name {
         text-transform: uppercase;
+        max-width: 330px;
+
+        @media (max-width: 1023px) {
+            font-size: 24px;
+            line-height: 24px;
+        }
     }
 
     &__description {
@@ -30,11 +47,21 @@
         color: $dark;
         max-width: 405px;
         margin-top: 28px;
+
+        @media (max-width: 1023px) {
+            margin-top: 16px;
+            max-width: 100%; 
+        }
     }
 
     &__right {
         width: 100%;
         max-width: 766px;
+
+        @media (max-width: 1023px) {
+            margin-top: 24px;
+            max-width: 100%;
+        }
     }
 
     &__items {
@@ -55,12 +82,23 @@
 
         &-title {
             max-width: 570px;
+
+            @media (max-width: 1140px) {
+                font-size: 15px;
+                line-height: 15px;
+            }
+
+            @media (max-width: 1023px) {
+                font-size: 14px;
+                line-height: 14px;
+            }
         }
 
         &-btn {
             border: none;
             outline: none;
             appearance: none;
+            flex-shrink: 0;
             width: 40px;
             height: 40px;
             background-color: #F8F8F8;
@@ -90,6 +128,11 @@
             border-radius: 24px;
             cursor: pointer;
         }
+
+        @media (max-width: 1023px) {
+            max-height: 72px;
+            margin-bottom: 8px;
+        }
     }
 
     &__item-head {
@@ -110,6 +153,12 @@
             color: $dark;
             max-width: 549px;
             margin-top: 16px;
+
+            @media (max-width: 1023px) {
+                font-size: 12px;
+                line-height: 16px;
+                max-width: 258px;
+            }
         }
 
         &-cases-title {
@@ -120,6 +169,15 @@
             font-weight: 900;
             color: $dark;
             margin-top: 32px;
+
+            @media (max-width: 1023px) {
+                font-size: 12px;
+                margin-top: 44px;
+            }
+        }
+
+        @media (max-width: 1023px) {
+            padding: 16px 20px 8px 20px;
         }
     }
 
@@ -149,12 +207,20 @@
             font-weight: 900;
             display: flex;
             align-items: center;
+
+            @media (max-width: 1023px) {
+                font-size: 14px;
+            }
         }
 
         &-name {}
 
         &-area {
             margin-left: 20px;
+
+            @media (max-width: 1023px) {
+                margin-left: 16px;
+            }
         }
 
         &-year {
@@ -164,6 +230,11 @@
             line-height: 17px;
             letter-spacing: 0.5px;
             text-transform: uppercase;
+
+            @media (max-width: 1023px) {
+                font-size: 8px;
+                letter-spacing: 0.4px;
+            }
         }
 
         &-description {
@@ -175,6 +246,12 @@
             line-height: 18px;
             max-width: 496px;
             margin-top: 59px;
+
+            @media (max-width: 1023px) {
+                font-size: 12px;
+                line-height: 16px;
+                margin-top: 67px;
+            }
         }
 
         &-background {
@@ -186,6 +263,10 @@
             object-fit: cover;
             z-index: 5;
         }
+    }
+
+    @media (max-width: 1023px) {
+        padding-top: 90px;
     }
 
 }

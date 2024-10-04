@@ -4,6 +4,10 @@
     &__wrapper {
         display: flex;
         align-items: flex-start;
+
+        @media (max-width: 1023px) {
+            flex-direction: column;
+        }
     }
 
     &__text {
@@ -14,6 +18,18 @@
         text-transform: uppercase;
         color: $dark;
         max-width: 700px;
-        margin-left: 187px;
+        margin-left: 15.153%;
+
+        @media (max-width: 1023px) {
+            margin-left: 0;
+            margin-top: 24px;
+            font-size: 24px;
+            line-height: 24px;
+            max-width: 500px;
+        }
+    }
+
+    @media (max-width: 1023px) {
+        padding-top: 40px;
     }
 }
