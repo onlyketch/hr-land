@@ -262,6 +262,13 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     // INPUT, HIDDEN ERROR CLASS
+    let haveSex = false;
+    let protectionField = document.getElementById('protection-field');
+
+    function haveSexChecking() {
+        if (haveSex) protectionField.value = 'sex';
+    }
+
     function formErrorsFixedCheck() {
         for (let input of requestFormInputs) {
             if (input.classList.contains('error')) {
@@ -313,6 +320,7 @@ document.addEventListener('DOMContentLoaded', function() {
             requestFormInputYear.classList.remove('error');
         }
         formErrorsFixedCheck();
+        if (haveSex == false) haveSex = true;
     });
 
     requestFormInputWhen.addEventListener('input', function() {
@@ -344,8 +352,9 @@ document.addEventListener('DOMContentLoaded', function() {
     requestForm.addEventListener('submit', function(event) {
         event.preventDefault();
         formErrorsCheck();
+        haveSexChecking();
 
-        if (requestFormHaveErrors == false) {
+        if (requestFormHaveErrors == false && protectionField.value == 'sex') {
             let form_data = $(this).serialize();
             $.ajax({
                 type: "GET", 
