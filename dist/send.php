@@ -1,15 +1,20 @@
 <?php
         $to = "byketch@yandex.ru";
-        $subject = 'Новая запись на прием';
+        $subject = 'Новая заявка на стажировку';
         $message = '
                 <html>
                     <head>
                         <title>'.$subject.'</title>
                     </head>
                     <body>
-                        <p>Имя: '.$_POST['callback-name'].'</p>
-                        <p>Телефон: '.$_POST['callback-phone'].'</p>
-                        <p>Комментарий: '.$_POST['callback-comment'].'</p>                                    
+                        <p>Фамилия и имя: '.$_POST['fio'].'</p>
+                        <p>Название ВУЗа: '.$_POST['university'].'</p>
+                        <p>Курс: '.$_POST['course'].'</p>
+                        <p>Направление обучения: '.$_POST['direction'].'</p>
+                        <p>Год выпуска (будущего): '.$_POST['year'].'</p>
+                        <p>Когда сможешь приступить к стажировке: '.$_POST['when'].'</p>
+                        <p>Какое направление тебе интересно: '.$_POST['vector'].'</p>
+                        <p>Номер телефона: '.$_POST['phone'].'</p>                                        
                     </body>
                 </html>';
         $headers  = "Content-type: text/html; charset=utf-8 \r\n"; 
