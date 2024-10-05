@@ -348,8 +348,8 @@ document.addEventListener('DOMContentLoaded', function() {
         if (requestFormHaveErrors == false) {
             let form_data = $(this).serialize();
             $.ajax({
-                type: "POST", 
-                url: "/send.php",
+                type: "GET", 
+                url: "/",
                 data: form_data,
                 success: function() {
                     requestFormSendAnimation.classList.add('visible');
