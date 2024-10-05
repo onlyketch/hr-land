@@ -55,6 +55,10 @@
             right: 0;
             bottom: -10px;
             z-index: 30;
+
+            @media (max-width: 699px) {
+                bottom: -5px;
+            }
         }
 
         @media (max-width: 1023px) {
@@ -101,6 +105,10 @@
                 height: 100%;
                 object-fit: cover;
             }
+
+            @media (max-width: 699px) {
+                height: 214px;
+            }
         }
 
         &-sign {
@@ -111,6 +119,13 @@
             color: $red;
             max-width: 571px;
             margin-top: 27px;
+
+            @media (max-width: 699px) {
+                font-size: 20px;
+                line-height: 16px;
+                max-width: 185px;
+                margin-top: 16px;
+            }
         }
     }
 

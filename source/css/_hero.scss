@@ -159,6 +159,13 @@
             right: auto; //-120
             left: 40%;
         }
+
+        @media (max-width: 699px) {
+            width: 286px; 
+            height: 400px;
+            left: auto;
+            right: -60px;
+        }
     }
 
     @media (max-width: 1023px) {

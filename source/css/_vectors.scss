@@ -20,12 +20,17 @@
     &__left {
         margin-right: 40px;
         flex-shrink: 0;
+
         .section-sign {
             margin-bottom: 26px;
 
             @media (max-width: 1023px) {
                 margin-bottom: 24px;
             }
+        }
+
+        @media (max-width: 1023px) {
+            margin-right: 0;
         }
     }
 

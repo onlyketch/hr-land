@@ -23,6 +23,10 @@
 
         &.red {
             background: rgba(214, 19, 54, 0.8);
+
+            @media (max-width: 699px) {
+                background: rgba(243, 243, 243, 0.80);
+            }
         }
     }
 
@@ -34,6 +38,10 @@
         text-transform: uppercase;
         color: $dark;
         letter-spacing: normal;
+
+        @media (max-width: 699px) {
+            max-width: 263px;
+        }
     }
 
     &__item-text {
@@ -45,10 +53,18 @@
         text-transform: none;
         letter-spacing: normal;
         max-width: 262px;
+
+        @media (max-width: 699px) {
+            max-width: 303px;
+        }
     }
 
     &__item.red &__item-value,
     &__item.red &__item-text {
         color: white;
+
+        @media (max-width: 699px) {
+            color: $dark;
+        }
     }
 }

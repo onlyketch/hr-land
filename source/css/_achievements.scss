@@ -91,11 +91,19 @@
                 align-self: flex-end;
                 margin-bottom: 0; 
             }
+
+            @media (max-width: 699px) {
+                align-self: flex-start;
+            }
         }
 
         @media (max-width: 1023px) {
             margin-bottom: 16px;
             max-width: 358px;
+        }
+
+        @media (max-width: 699px) {
+            max-width: 100%;
         }
     }
 
