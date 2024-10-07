@@ -88,12 +88,12 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // FIXED HEADER AND NAV SWITCHER START
 
-    let sectionAboutPos = $('.about').offset().top;
-    let sectionVectorsPos = $('.vectors').offset().top;
-    let sectionClientsPos = $('.clients').offset().top;
-    let sectionReviewsPos = $('.reviews').offset().top;
-    let sectionInternshipPos = $('.internship').offset().top;
-    let sectionWhyPos = $('.why').offset().top;
+    let sectionAboutPos = $('.about').offset().top - 1;
+    let sectionVectorsPos = $('.vectors').offset().top - 1;
+    let sectionClientsPos = $('.clients').offset().top - 1;
+    let sectionReviewsPos = $('.reviews').offset().top - 1;
+    let sectionInternshipPos = $('.internship').offset().top - 1;
+    let sectionWhyPos = $('.why').offset().top - 1;
     let header = document.querySelector('.header');
     let headerNavLinkAbout = document.getElementById('nav-about');
     let headerNavLinkVectors = document.getElementById('nav-vectors');
