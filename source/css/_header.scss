@@ -23,6 +23,7 @@
     }
 
     &__nav {
+        user-select: none;
 
         &-item {
             font-family: "Roboto", Arial, Helvetica, sans-serif;
@@ -43,6 +44,14 @@
                 color: $dark;
             }
 
+            &:hover {
+                opacity: 0.6;
+            }
+
+            &.active:hover {
+                opacity: 1;
+            }
+
             @media (max-width: 1140px) {
                 padding: 12px;
             }
@@ -58,6 +67,12 @@
     &__btn {
         height: 45px;
         color: $red;
+        transition: all .3s ease-out;
+
+        &:hover {
+            background-color: $red-dark;
+            color: white;
+        }
     }
 
     &.fix {
@@ -74,6 +89,10 @@
     &.fix &__btn {
         background-color: $red;
         color: white;
+    }
+
+    &.fix &__btn:hover {
+        background-color: $red-dark;
     }
 
     &.fix &__logo-white {

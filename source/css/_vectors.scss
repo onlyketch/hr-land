@@ -124,7 +124,7 @@
             transform: scaleY(-1);
         }
 
-        &-handler {
+        &-handler, &-hover {
             position: absolute;
             top: 0;
             left: 0;
@@ -132,6 +132,25 @@
             height: 76px;
             border-radius: 24px;
             cursor: pointer;
+        }
+
+        &-handler {
+            z-index: 11;
+
+            &:hover+.vectors__item-hover{
+                background-color: #E3E3E3;
+            }
+        }
+
+        &-hover {
+            transition: all .3s ease-out;
+            z-index: 5;
+        }
+
+        &.open &-handler:hover+.vectors__item-hover {
+            
+                background-color: transparent;
+            
         }
 
         @media (max-width: 1023px) {
@@ -145,6 +164,8 @@
         padding: 18px 28px 12px 28px;
 
         &-wrapper {
+            position: relative;
+            z-index: 10;
             display: flex;
             align-items: center;
             justify-content: space-between;

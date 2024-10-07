@@ -358,6 +358,11 @@
             background-color: $red;
             color: white;
             border-radius: 8px;
+            transition: all .3s ease-out;
+
+            &:hover {
+                background-color: $red-dark;
+            }
 
             @media (max-width: 699px) {
                 margin-top: 44px;

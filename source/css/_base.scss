@@ -1,4 +1,5 @@
 $red: #D61336;
+$red-dark: #AB052E;
 $dark: #161719;
 $dark-light: #202B39;
 $light-gray: #F3F3F3;
@@ -117,6 +118,11 @@ h4 {
         background-repeat: no-repeat;
         background-size: 10px 8px;
         background-position: center;
+        transition: all .3s ease-out;
+
+        &:hover {
+            background-color: $red;
+        }
     }
 
     &__controls-counter {
@@ -131,9 +137,17 @@ h4 {
 
     &__controls-left {
         background-image: url('../images/arrow-black-left.svg');
+
+        &:hover {
+            background-image: url('../images/arrow-white-left.svg');
+        }
     }
 
     &__controls-right {
         background-image: url('../images/arrow-black-right.svg');
+
+        &:hover {
+            background-image: url('../images/arrow-white-right.svg');
+        }
     }
 }
