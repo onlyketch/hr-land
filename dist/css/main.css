@@ -1816,6 +1816,12 @@ h4 {
   text-transform: uppercase;
   margin-top: 40px;
 }
+@media (max-width: 699px) {
+  .request__header-subtitle {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
 .request__header-info {
   position: relative;
   z-index: 20;
@@ -2295,7 +2301,7 @@ h4 {
   font-weight: 900;
   text-transform: uppercase;
   text-align: center;
-  max-width: 500px;
+  max-width: 440px;
   margin: 0 auto;
 }
 @media (max-width: 1023px) {
