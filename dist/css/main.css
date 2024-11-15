@@ -1825,7 +1825,7 @@ h4 {
 .request__header-info {
   position: relative;
   z-index: 20;
-  margin-top: 60px;
+  margin-top: 40px;
 }
 @media (max-width: 1023px) {
   .request__header-info {
@@ -1854,9 +1854,9 @@ h4 {
 }
 .request__header-block-value {
   font-family: "Roboto Condensed", Arial, Helvetica, sans-serif;
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 24px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 22px;
   letter-spacing: -0.02em;
   margin-top: 8px;
   max-width: 520px;
@@ -1884,7 +1884,7 @@ h4 {
 .request__header-image {
   position: absolute;
   bottom: 0;
-  right: -20px;
+  right: 0;
   width: 630px;
   height: 670px;
   pointer-events: none;
