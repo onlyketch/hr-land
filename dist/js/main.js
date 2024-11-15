@@ -357,8 +357,9 @@ document.addEventListener('DOMContentLoaded', function() {
         if (requestFormHaveErrors == false && protectionField.value == 'sex') {
             let form_data = $(this).serialize();
             $.ajax({
-                type: "GET", 
-                url: "/",
+                type: "POST", 
+                url: "/form/",
+                dataType: "json",
                 data: form_data,
                 success: function() {
                     requestFormSendAnimation.classList.add('visible');
