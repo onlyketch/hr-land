@@ -1570,6 +1570,8 @@ h4 {
 @media (max-width: 699px) {
   .reviews__slider-item-photo {
     right: 6px;
+    width: 183px;
+    height: 255px;
   }
 }
 @media (max-width: 1023px) {
